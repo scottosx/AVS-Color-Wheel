@@ -117,7 +117,7 @@ Begin Window Window1
       TabStop         =   True
       TickStyle       =   "0"
       Top             =   32
-      Value           =   0
+      Value           =   100
       Visible         =   True
       Width           =   26
    End
@@ -959,11 +959,11 @@ Begin Window Window1
       InitialParent   =   ""
       Italic          =   False
       Left            =   428
-      LockBottom      =   False
+      LockBottom      =   True
       LockedInPosition=   False
       LockLeft        =   False
       LockRight       =   True
-      LockTop         =   True
+      LockTop         =   False
       Multiline       =   False
       Scope           =   0
       Selectable      =   False
@@ -1259,7 +1259,6 @@ Begin Window Window1
       Scope           =   0
       Segments        =   "RGB\n\nTrue\rHSV\n\nFalse"
       SelectionType   =   0
-      TabIndex        =   39
       TabPanelIndex   =   0
       Top             =   132
       Visible         =   True
@@ -1312,7 +1311,6 @@ Begin Window Window1
       Scope           =   0
       Segments        =   "dB\n\nTrue\rLinear\n\nFalse"
       SelectionType   =   0
-      TabIndex        =   45
       TabPanelIndex   =   0
       Top             =   461
       Visible         =   True
@@ -1330,7 +1328,7 @@ End
 
 
 	#tag Method, Flags = &h0
-		Sub ConvertHSVtoRGB(h as Double,s as Double,v as Double)
+		Sub ConvertHSVtoRGB(h as Double, s as Double, v as Double)
 		  //http://www.cs.rit.edu/~ncs/color/t_convert.html
 		  Dim i as integer
 		  Dim f,p,q,t as Double
@@ -1786,7 +1784,7 @@ End
 #tag Events optionalSlider
 	#tag Event
 		Sub ValueChanged()
-		  CanvasColorWheel1.setSliderValue(1.0 - (me.Value) / me.Maximum, true)
+		  CanvasColorWheel1.setSliderValue(me.Value / me.Maximum, true)
 		  
 		End Sub
 	#tag EndEvent
@@ -1804,6 +1802,13 @@ End
 		  'Dim c as new Clipboard
 		  'c.Text = TextField2.Text
 		  
+		End Sub
+	#tag EndEvent
+	#tag Event
+		Sub Open()
+		  #if TargetMacOS then
+		    Me.TextSize = 10
+		  #endif
 		End Sub
 	#tag EndEvent
 #tag EndEvents
@@ -2373,6 +2378,7 @@ End
 		Visible=true
 		Group="ID"
 		Type="String"
+		EditorType="String"
 	#tag EndViewProperty
 	#tag ViewProperty
 		Name="keyUpDelay"
@@ -2472,6 +2478,7 @@ End
 		Visible=true
 		Group="ID"
 		Type="String"
+		EditorType="String"
 	#tag EndViewProperty
 	#tag ViewProperty
 		Name="Placement"
@@ -2501,6 +2508,7 @@ End
 		Visible=true
 		Group="ID"
 		Type="String"
+		EditorType="String"
 	#tag EndViewProperty
 	#tag ViewProperty
 		Name="Title"
