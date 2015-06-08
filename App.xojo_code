@@ -89,7 +89,7 @@ Inherits Application
 		Function ListNewColorList() As Boolean Handles ListNewColorList.Action
 			If wColorList = Nil then
 			wColorList = New ColorList
-			End If 
+			End If
 			wColorList.ListBox1.DeleteAllRows
 			If UBound(lstColors) <> -1 then
 			ReDim lstColors(-1)
