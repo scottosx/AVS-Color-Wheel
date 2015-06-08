@@ -6,6 +6,34 @@ Begin Menu MainMenuBar
       Index = -2147483648
       AutoEnable = True
       Visible = True
+      Begin MenuItem FileOpenColorList
+         SpecialMenu = 0
+         Text = "Open Color List"
+         Index = -2147483648
+         AutoEnable = True
+         Visible = True
+      End
+      Begin MenuItem FileSaveColorList
+         SpecialMenu = 0
+         Text = "Save Color List"
+         Index = -2147483648
+         AutoEnable = False
+         Visible = True
+      End
+      Begin MenuItem FileSaveMWSTimerTable
+         SpecialMenu = 0
+         Text = "Save MWS Timer Table"
+         Index = -2147483648
+         AutoEnable = False
+         Visible = True
+      End
+      Begin MenuItem FileSaveMWSDataTable
+         SpecialMenu = 0
+         Text = "Save MWS Data Table"
+         Index = -2147483648
+         AutoEnable = False
+         Visible = True
+      End
       Begin QuitMenuItem FileQuit
          SpecialMenu = 0
          Text = "#App.kFileQuit"
@@ -91,6 +119,41 @@ Begin Menu MainMenuBar
          Shortcut = "Cmd+A"
          MenuModifier = True
          AutoEnable = True
+         Visible = True
+      End
+   End
+   Begin MenuItem mnuList
+      SpecialMenu = 0
+      Text = "List"
+      Index = -2147483648
+      AutoEnable = True
+      Visible = True
+      Begin MenuItem mnuListView
+         SpecialMenu = 0
+         Text = "View Color List"
+         Index = -2147483648
+         AutoEnable = True
+         Visible = True
+      End
+      Begin MenuItem ListNewColorList
+         SpecialMenu = 0
+         Text = "New Color List"
+         Index = -2147483648
+         AutoEnable = True
+         Visible = True
+      End
+      Begin MenuItem ListAddColor
+         SpecialMenu = 0
+         Text = "Add Color"
+         Index = -2147483648
+         AutoEnable = False
+         Visible = True
+      End
+      Begin MenuItem ListRemoveColor
+         SpecialMenu = 0
+         Text = "Remove Color"
+         Index = -2147483648
+         AutoEnable = False
          Visible = True
       End
    End

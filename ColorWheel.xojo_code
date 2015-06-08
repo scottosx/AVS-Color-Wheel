@@ -108,7 +108,7 @@ Protected Class ColorWheel
 
 	#tag Method, Flags = &h0
 		Function render(oldPic As Picture) As Picture
-		   
+		  
 		  dim pic As Picture //Picture to render into. Use oldPic if possible, otherwise make a new one
 		  if oldPic <> nil and oldPic.Width = imgWidth and oldPic.Height = imgHeight then
 		    pic = oldPic

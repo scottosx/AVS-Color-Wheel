@@ -26,7 +26,7 @@ Begin Window Window1
    Title           =   "AVS Color Wheel"
    Visible         =   True
    Width           =   652
-   Begin Rectangle Rectangle1
+   Begin Rectangle MainColor
       AutoDeactivate  =   True
       BorderWidth     =   1
       BottomRightColor=   &c00000000
@@ -50,7 +50,7 @@ Begin Window Window1
       Visible         =   True
       Width           =   64
    End
-   Begin TextField TextField1
+   Begin TextField txtHex
       AcceptTabs      =   False
       Alignment       =   2
       AutoDeactivate  =   True
@@ -197,7 +197,7 @@ Begin Window Window1
          BorderWidth     =   1
          BottomRightColor=   &c00000000
          Enabled         =   True
-         FillColor       =   &cFF000000
+         FillColor       =   &cFB000600
          Height          =   45
          HelpTag         =   ""
          Index           =   -2147483648
@@ -221,7 +221,7 @@ Begin Window Window1
          BorderWidth     =   1
          BottomRightColor=   &c00000000
          Enabled         =   True
-         FillColor       =   &c00FF0000
+         FillColor       =   &c22FF0600
          Height          =   45
          HelpTag         =   ""
          Index           =   -2147483648
@@ -245,7 +245,7 @@ Begin Window Window1
          BorderWidth     =   1
          BottomRightColor=   &c00000000
          Enabled         =   True
-         FillColor       =   &c0000FF00
+         FillColor       =   &c0000FE00
          Height          =   45
          HelpTag         =   ""
          Index           =   -2147483648
@@ -269,7 +269,7 @@ Begin Window Window1
          BorderWidth     =   1
          BottomRightColor=   &c00000000
          Enabled         =   True
-         FillColor       =   &cFF800000
+         FillColor       =   &cFC6A0800
          Height          =   45
          HelpTag         =   ""
          Index           =   -2147483648
@@ -293,7 +293,7 @@ Begin Window Window1
          BorderWidth     =   1
          BottomRightColor=   &c00000000
          Enabled         =   True
-         FillColor       =   &cFFFF0000
+         FillColor       =   &cFFFF0A00
          Height          =   45
          HelpTag         =   ""
          Index           =   -2147483648
@@ -317,7 +317,7 @@ Begin Window Window1
          BorderWidth     =   1
          BottomRightColor=   &c00000000
          Enabled         =   True
-         FillColor       =   &cFF00FF00
+         FillColor       =   &cFB00FE00
          Height          =   45
          HelpTag         =   ""
          Index           =   -2147483648
@@ -341,7 +341,7 @@ Begin Window Window1
          BorderWidth     =   1
          BottomRightColor=   &c00000000
          Enabled         =   True
-         FillColor       =   &c00FFFF00
+         FillColor       =   &c20FFFE00
          Height          =   45
          HelpTag         =   ""
          Index           =   -2147483648
@@ -392,7 +392,7 @@ Begin Window Window1
             BorderColor     =   &c00000000
             BorderWidth     =   1
             Enabled         =   True
-            FillColor       =   &c0000FF00
+            FillColor       =   &cFFFFFF00
             Height          =   13
             HelpTag         =   ""
             Index           =   -2147483648
@@ -412,7 +412,7 @@ Begin Window Window1
          End
       End
    End
-   Begin TextField TextField2
+   Begin TextField txtColorInt
       AcceptTabs      =   False
       Alignment       =   2
       AutoDeactivate  =   True
@@ -454,7 +454,7 @@ Begin Window Window1
       Visible         =   True
       Width           =   118
    End
-   Begin Rectangle Rectangle2
+   Begin Rectangle ComplementaryColor
       AutoDeactivate  =   True
       BorderWidth     =   1
       BottomRightColor=   &c00000000
@@ -502,7 +502,7 @@ Begin Window Window1
       TabPanelIndex   =   0
       Text            =   "Red%"
       TextAlign       =   2
-      TextColor       =   &cFFFFFF00
+      TextColor       =   &c00000000
       TextFont        =   "System"
       TextSize        =   0.0
       TextUnit        =   0
@@ -536,7 +536,7 @@ Begin Window Window1
       TabPanelIndex   =   0
       Text            =   "Green%"
       TextAlign       =   2
-      TextColor       =   &cFFFFFF00
+      TextColor       =   &c00000000
       TextFont        =   "System"
       TextSize        =   0.0
       TextUnit        =   0
@@ -570,7 +570,7 @@ Begin Window Window1
       TabPanelIndex   =   0
       Text            =   "Blue%"
       TextAlign       =   2
-      TextColor       =   &cFFFFFF00
+      TextColor       =   &c00000000
       TextFont        =   "System"
       TextSize        =   0.0
       TextUnit        =   0
@@ -730,7 +730,7 @@ Begin Window Window1
       TabPanelIndex   =   0
       Text            =   "Red dB"
       TextAlign       =   2
-      TextColor       =   &cFFFFFF00
+      TextColor       =   &c00000000
       TextFont        =   "System"
       TextSize        =   0.0
       TextUnit        =   0
@@ -764,7 +764,7 @@ Begin Window Window1
       TabPanelIndex   =   0
       Text            =   "Green dB"
       TextAlign       =   2
-      TextColor       =   &cFFFFFF00
+      TextColor       =   &c00000000
       TextFont        =   "System"
       TextSize        =   0.0
       TextUnit        =   0
@@ -798,7 +798,7 @@ Begin Window Window1
       TabPanelIndex   =   0
       Text            =   "Blue dB"
       TextAlign       =   2
-      TextColor       =   &cFFFFFF00
+      TextColor       =   &c00000000
       TextFont        =   "System"
       TextSize        =   0.0
       TextUnit        =   0
@@ -971,7 +971,7 @@ Begin Window Window1
       TabPanelIndex   =   0
       Text            =   "Brightness"
       TextAlign       =   1
-      TextColor       =   &cFFFFFF00
+      TextColor       =   &c00000000
       TextFont        =   "System"
       TextSize        =   0.0
       TextUnit        =   0
@@ -1080,7 +1080,7 @@ Begin Window Window1
       TabPanelIndex   =   0
       Text            =   "Blue"
       TextAlign       =   2
-      TextColor       =   &cFFFFFF00
+      TextColor       =   &c00000000
       TextFont        =   "System"
       TextSize        =   0.0
       TextUnit        =   0
@@ -1157,7 +1157,7 @@ Begin Window Window1
       TabPanelIndex   =   0
       Text            =   "Green"
       TextAlign       =   2
-      TextColor       =   &cFFFFFF00
+      TextColor       =   &c00000000
       TextFont        =   "System"
       TextSize        =   0.0
       TextUnit        =   0
@@ -1191,7 +1191,7 @@ Begin Window Window1
       TabPanelIndex   =   0
       Text            =   "Red"
       TextAlign       =   2
-      TextColor       =   &cFFFFFF00
+      TextColor       =   &c00000000
       TextFont        =   "System"
       TextSize        =   0.0
       TextUnit        =   0
@@ -1321,6 +1321,14 @@ End
 
 #tag WindowCode
 	#tag Event
+		Sub Close()
+		  If wColorList <> Nil then
+		    wColorList.Close
+		  End If
+		End Sub
+	#tag EndEvent
+
+	#tag Event
 		Sub Open()
 		  Oval1.FillColor = RGB(0,0,0,255)
 		End Sub
@@ -1449,36 +1457,36 @@ End
 		  
 		  If CheckBox1.Value then
 		    //dB
-		    if red <> 0 then
+		    if red <> 0 or red >= 0.01 then
 		      txtRedDBLin.Text = "-" +Format(-24 - (20 * log(255/(red/10))),"#.##")
 		    else
 		      txtRedDBLin.Text = "0"
 		    end if
-		    if green <> 0 then
+		    if green <> 0 or green >= 0.01 then
 		      txtGreenDBLin.Text = "-" + Format(-24 - (20 * log(255/green)),"#.##")
 		    else
 		      txtGreenDBLin.Text = "0"
 		    end if
-		    if blue <> 0 then
+		    if blue <> 0 or blue >= 0.01 then
 		      txtBlueDBLin.Text = "-" + Format(-24 - (20 * log(255/blue)),"#.##")
 		    else
 		      txtBlueDBLin.Text = "0"
 		    end if
 		  Else
 		    //dB
-		    If red <> 0 then
+		    If red <> 0 or red >= 0.01 then
 		      txtRedDBLin.Text = "-" + Format(-24 - (20 * log(255/red)),"#.##")
 		    else
 		      txtRedDBLin.Text = "0"
 		    end if
 		    'If Val(txtRedDBLin.Text) > -24 then txtRedDBLin.Text = "-24"
-		    if green <> 0 then
+		    if green <> 0 or green >= 0.01 then
 		      txtGreenDBLin.Text = "-" + Format(-24 - (20 * log(255/green)),"#.##")
 		    else
 		      txtGreenDBLin.Text = "0"
 		    end if
 		    'If Val(txtGreenDBLin.Text) > -24 then txtGreenDBLin.Text = "-24"
-		    if blue <> 0 then
+		    if blue <> 0 or blue >= 0.01 then
 		      txtBlueDBLin.Text = "-" + Format(-24 - (20 * log(255/blue)),"#.##")
 		    else
 		      txtBlueDBLin.Text = "0"
@@ -1508,13 +1516,11 @@ End
 		  
 		  Dim rbColor as Color = RGB(red,green,blue)
 		  
-		  Dim colorHex,colorHexAdj as Variant
+		  Dim colorHex as Variant
 		  colorHex = rbColor
-		  Dim colorNum as Int64
-		  colorNum = colorHex
 		  
 		  //Hex
-		  TextField1.Text = colorHex
+		  txtHex.Text = colorHex
 		End Sub
 	#tag EndMethod
 
@@ -1526,13 +1532,13 @@ End
 		  
 		  Dim rbColor as Color = RGB(red,green,blue)
 		  
-		  Dim colorHex,colorHexAdj as Variant
+		  Dim colorHex as Variant
 		  colorHex = rbColor
 		  Dim colorNum as Int64
 		  colorNum = colorHex
 		  
 		  //Int64
-		  TextField2.Text = Str(colorNum)
+		  txtColorInt.Text = Str(colorNum)
 		End Sub
 	#tag EndMethod
 
@@ -1642,7 +1648,7 @@ End
 		  Dim blue as Integer = c(2)
 		  
 		  Dim rbColor as Color = RGB(red,green,blue)
-		  Rectangle1.FillColor = rbColor
+		  MainColor.FillColor = rbColor
 		End Sub
 	#tag EndMethod
 
@@ -1654,17 +1660,17 @@ End
 		  Dim blue as Integer = c(2)
 		  
 		  Dim oppRed as Color = RGB(255 - red,255-green,255-blue)
-		  Rectangle2.FillColor = oppRed
+		  ComplementaryColor.FillColor = oppRed
 		End Sub
 	#tag EndMethod
 
 	#tag Method, Flags = &h0
 		Sub SwapSwatches()
-		  Dim oldColor as Color = Window1.Rectangle1.FillColor
-		  Dim newColor as Color = Window1.Rectangle2.FillColor
+		  Dim oldColor as Color = Window1.MainColor.FillColor
+		  Dim newColor as Color = Window1.ComplementaryColor.FillColor
 		  
-		  Window1.Rectangle1.FillColor =newColor
-		  Window1.Rectangle2.FillColor = oldColor
+		  Window1.MainColor.FillColor =newColor
+		  Window1.ComplementaryColor.FillColor = oldColor
 		  
 		  Dim dRed as Double = newColor.red
 		  Dim dGreen as Double = newColor.Green
@@ -1717,7 +1723,7 @@ End
 
 #tag EndWindowCode
 
-#tag Events TextField1
+#tag Events txtHex
 	#tag Event
 		Sub TextChange()
 		  If KeyUpInTextField then
@@ -1799,8 +1805,16 @@ End
 		  end if
 		  CanvasColorWheel1.rerender
 		  Canvas1.Refresh
+		  ColorByCode = True
+		  Dim cA() as Double
+		  cA.Append Val(txtRed.Text)
+		  cA.Append Val(txtGreen.Text)
+		  cA.Append Val(txtBlue.Text)
+		  SetColorInt64(cA)
+		  SetColorHex(cA)
+		  ColorByCode = False
 		  'Dim c as new Clipboard
-		  'c.Text = TextField2.Text
+		  'c.Text = txtColorInt.Text
 		  
 		End Sub
 	#tag EndEvent
@@ -1828,7 +1842,7 @@ End
 		  SetColorDBLin(cArray)
 		  Oval1.Visible = False
 		  'Dim c as new Clipboard
-		  'c.Text = TextField2.Text
+		  'c.Text = txtColorInt.Text
 		End Function
 	#tag EndEvent
 #tag EndEvents
@@ -1848,7 +1862,7 @@ End
 		  SetColorDBLin(cArray)
 		  Oval1.Visible = False
 		  'Dim c as new Clipboard
-		  'c.Text = TextField2.Text
+		  'c.Text = txtColorInt.Text
 		End Function
 	#tag EndEvent
 #tag EndEvents
@@ -1868,7 +1882,7 @@ End
 		  SetColorDBLin(cArray)
 		  Oval1.Visible = False
 		  'Dim c as new Clipboard
-		  'c.Text = TextField2.Text
+		  'c.Text = txtColorInt.Text
 		End Function
 	#tag EndEvent
 #tag EndEvents
@@ -1888,7 +1902,7 @@ End
 		  SetColorDBLin(cArray)
 		  Oval1.Visible = False
 		  'Dim c as new Clipboard
-		  'c.Text = TextField2.Text
+		  'c.Text = txtColorInt.Text
 		End Function
 	#tag EndEvent
 #tag EndEvents
@@ -1908,7 +1922,7 @@ End
 		  SetColorDBLin(cArray)
 		  Oval1.Visible = False
 		  'Dim c as new Clipboard
-		  'c.Text = TextField2.Text
+		  'c.Text = txtColorInt.Text
 		End Function
 	#tag EndEvent
 #tag EndEvents
@@ -1928,7 +1942,7 @@ End
 		  SetColorDBLin(cArray)
 		  Oval1.Visible = False
 		  'Dim c as new Clipboard
-		  'c.Text = TextField2.Text
+		  'c.Text = txtColorInt.Text
 		End Function
 	#tag EndEvent
 #tag EndEvents
@@ -1948,32 +1962,34 @@ End
 		  SetColorDBLin(cArray)
 		  Oval1.Visible = False
 		  'Dim c as new Clipboard
-		  'c.Text = TextField2.Text
+		  'c.Text = txtColorInt.Text
 		End Function
 	#tag EndEvent
 #tag EndEvents
-#tag Events TextField2
+#tag Events txtColorInt
 	#tag Event
 		Sub TextChange()
 		  If KeyUpInTextField then
-		    keyUpDelay = True
-		    KeyUpTimer.Mode = Timer.ModeSingle
-		    If Not KeyUpDelay then
-		      If Not ColorByCode and FocusedTextField = Me then
-		        Dim colorNum as Variant =Val(Me.Text)
-		        Dim c as Color = colorNum
-		        Dim dRed as Double = c.Red
-		        Dim dGreen as Double = c.Green
-		        Dim dBlue as Double = c.Blue
-		        Dim cArray() as Double = Array (dRed,dGreen,dBlue)
-		        SetMainSwatchColor(cArray)
-		        SetOppositeSwatchColor(cArray)
-		        SetColorValues(cArray)
-		        SetColorPercentage(cArray)
-		        SetColorHex(cArray)
-		        SetColorInt64(cArray)
-		        SetColorDBLin(cArray)
-		      End If
+		    'keyUpDelay = True
+		    'KeyUpTimer.Mode = Timer.ModeSingle
+		    'While Not keyUpDelay 
+		    'Wend
+		    'If Not KeyUpDelay then
+		    If FocusedTextField = Me then
+		      Dim colorNum as Variant =Val(Me.Text)
+		      Dim c as Color = colorNum
+		      Dim dRed as Double = c.Red
+		      Dim dGreen as Double = c.Green
+		      Dim dBlue as Double = c.Blue
+		      Dim cArray() as Double = Array (dRed,dGreen,dBlue)
+		      SetMainSwatchColor(cArray)
+		      SetOppositeSwatchColor(cArray)
+		      SetColorValues(cArray)
+		      SetColorPercentage(cArray)
+		      SetColorHex(cArray)
+		      SetColorInt64(cArray)
+		      SetColorDBLin(cArray)
+		      'End If
 		    end if
 		    'Dim clip as New Clipboard
 		    'clip.Text = Me.Text
@@ -2012,16 +2028,17 @@ End
 	#tag Event
 		Function KeyDown(Key As String) As Boolean
 		  KeyUpInTextField = True
+		  FocusedTextField = Me
 		End Function
 	#tag EndEvent
 #tag EndEvents
-#tag Events Rectangle2
+#tag Events ComplementaryColor
 	#tag Event
 		Function MouseDown(X As Integer, Y As Integer) As Boolean
 		  SwapSwatches
 		  Oval1.Visible = False
 		  'Dim c as new Clipboard
-		  'c.Text = TextField2.Text
+		  'c.Text = txtColorInt.Text
 		End Function
 	#tag EndEvent
 #tag EndEvents
@@ -2080,7 +2097,7 @@ End
 #tag Events CheckBox1
 	#tag Event
 		Sub Action()
-		  Dim c as Color = Rectangle1.FillColor
+		  Dim c as Color = MainColor.FillColor
 		  Dim cA() as Double
 		  cA.Append c .Red
 		  cA.Append c.Green
@@ -2177,7 +2194,7 @@ End
 #tag Events SegmentedControl1
 	#tag Event
 		Sub Action(itemIndex as integer)
-		  Dim c as Color = Rectangle1.FillColor
+		  Dim c as Color = MainColor.FillColor
 		  If itemIndex = 0 Then
 		    lblRed.Text = "Red"
 		    lblGreen.Text = "Green"
@@ -2199,22 +2216,22 @@ End
 #tag Events CheckBox2
 	#tag Event
 		Sub Action()
-		  Dim c as Color = Rectangle1.FillColor
+		  Dim c as Color = MainColor.FillColor
 		  If Me.Value then
 		    //Adjust from closed eyes
 		    Dim colorHex,colorHexAdj as Variant
-		    colorHex = Rectangle1.FillColor.Red
+		    colorHex = MainColor.FillColor.Red
 		    Dim colorNum as Int64
 		    colorNum = colorHex
-		    colorHexAdj = RGB(Rectangle1.FillColor.Red /10,Rectangle1.FillColor.Green,Rectangle1.FillColor.Blue)
+		    colorHexAdj = RGB(MainColor.FillColor.Red /10,MainColor.FillColor.Green,MainColor.FillColor.Blue)
 		    colorNum = colorHexAdj
-		    Window1.TextField2.Text = Str(colorNum)
+		    Window1.txtColorInt.Text = Str(colorNum)
 		    Dim s As SegmentedControlItem
 		    s = Window1.SegmentedControl1.Items(0)
 		    If s.Selected then
-		      txtRed.Text = Str(Rectangle1.FillColor.Red/10)
+		      txtRed.Text = Str(MainColor.FillColor.Red/10)
 		    Else
-		      txtRed.Text = Format(Rectangle1.FillColor.Hue/10,"#.####")
+		      txtRed.Text = Format(MainColor.FillColor.Hue/10,"#.####")
 		    End If
 		    
 		    txtRedPerc.Text = Format(c.Red/25.5,"#.##")
@@ -2227,20 +2244,20 @@ End
 		    
 		  Else
 		    Dim colorHex,colorHexAdj as Variant
-		    colorHex = Rectangle1.FillColor.Red
+		    colorHex = MainColor.FillColor.Red
 		    Dim colorNum as Int64
 		    colorNum = colorHex
 		    colorNum = colorHex
 		    //Adjust from closed eyes
-		    colorHexAdj = RGB(Rectangle1.FillColor.Red,Rectangle1.FillColor.Green,Rectangle1.FillColor.Blue)
+		    colorHexAdj = RGB(MainColor.FillColor.Red,MainColor.FillColor.Green,MainColor.FillColor.Blue)
 		    colorNum = colorHexAdj
-		    Window1.TextField2.Text = Str(colorNum)
+		    Window1.txtColorInt.Text = Str(colorNum)
 		    Dim s As SegmentedControlItem
 		    s = Window1.SegmentedControl1.Items(0)
 		    If s.Selected then
-		      txtRed.Text = Str(Rectangle1.FillColor.Red)
+		      txtRed.Text = Str(MainColor.FillColor.Red)
 		    Else
-		      txtRed.Text = Format(Rectangle1.FillColor.Hue,"#.####")
+		      txtRed.Text = Format(MainColor.FillColor.Hue,"#.####")
 		    End If
 		    
 		    txtRedPerc.Text = Format(c.Red/2.55,"#.##")
@@ -2259,7 +2276,7 @@ End
 #tag Events SegmentedControl2
 	#tag Event
 		Sub Action(itemIndex as integer)
-		  Dim c as Color = Rectangle1.FillColor
+		  Dim c as Color = MainColor.FillColor
 		  Dim cA() as Double
 		  cA.Append c.Red
 		  cA.Append c.Green

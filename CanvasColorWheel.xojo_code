@@ -56,6 +56,7 @@ Inherits Canvas
 
 	#tag Event
 		Sub MouseUp(X As Integer, Y As Integer)
+		  Window1.ColorByCode = False
 		  Window1.Oval1.Visible = True
 		  Me.MouseCursor = System.Cursors.StandardPointer
 		  Window1.Oval1.Visible = True
@@ -100,9 +101,13 @@ Inherits Canvas
 		  'If Window1.BevelButton1.Value then Return False
 		  Dim c as Color
 		  'RGBSurface.Pixel ( x as Integer, y as Integer ) As Color
-		  c = renderedPic.Graphics.Pixel(X, Y)
+		  If x > 0 and y > 0 and x < me.width and y< me.height then
+		    c = renderedPic.Graphics.Pixel(X, Y)
+		  else
+		    return
+		  end if
 		  
-		  'Window1.TextField2.Text = Str(DecodeHex(c))
+		  'Window1.txtColorInt.Text = Str(DecodeHex(c))
 		  Dim colorHex as Variant
 		  colorHex = c
 		  Dim colorNum as Int64
@@ -241,6 +246,7 @@ Inherits Canvas
 			Visible=true
 			Group="ID"
 			Type="Integer"
+			EditorType="Integer"
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="InitialParent"
@@ -281,12 +287,14 @@ Inherits Canvas
 			Visible=true
 			Group="ID"
 			Type="String"
+			EditorType="String"
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="Super"
 			Visible=true
 			Group="ID"
 			Type="String"
+			EditorType="String"
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="TabIndex"
